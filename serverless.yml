@@ -63,10 +63,18 @@ functions:
     handler: hello.handler
   httprequest:
     handler: httprequest.handler
+    events:
+      - schedule: rate(10 minutes)
+  webapi:
+    handler: webapi.handler
+    events:
+      - http:
+          path: /
+          method: get
+
   
 plugins:
-      - serverless-python-requirements
-    
+  - serverless-python-requirements
 custom:
   pythonRequirements:
     dockerizePip: true

@@ -1,5 +1,6 @@
 import requests
+import json
 
 def handler(event, context):
-    r = requests.get("https://jsonplaceholder.typicode.com/users")
-    return {"content": r.content}
+    r = requests.get("https://jsonplaceholder.typicode.com/comments")
+    return {"content": json.loads(r.content)}
