@@ -2,7 +2,7 @@
 
 ![webapi](https://raw.githubusercontent.com/anelhaman/aws-serverless/master/screen.png)
 
-## aws see config credentials
+## aws show config credentials
 
 ```
 aws configure
