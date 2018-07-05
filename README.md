@@ -17,6 +17,15 @@ npm install -g serverless
 See more [serverless](https://www.npmjs.com/package/serverless) 
 
 
+## create own project 
+
+```
+sls create -n my-serverless-project -t aws-python3
+```
+
+or clone this repo
+
+
 ## install plugins
 
 ```
